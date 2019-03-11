@@ -1,0 +1,96 @@
+.three_section {
+    max-width: rem(1920px);
+    background-image: url("../img/function-bg.png");
+    background-size: cover;
+    background-position: top center;
+    margin: -160px auto;
+    position: relative;
+    margin-bottom: 160px;
+}
+
+.functions {
+    padding: rem(160px) rem(20px) rem(54px);
+
+    @include phones {
+        padding: rem(160px) rem(10px) rem(54px);
+    }
+}
+
+.section_title__function {
+    text-align: center;
+}
+
+.function_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    @include desktop {
+      justify-content: space-around;
+    }
+
+    @include tablets {
+      justify-content: center;
+    }
+}
+
+.function_item {
+    max-width: 360px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 120px 60px 30px;
+    margin-bottom: 40px;
+}
+
+.function_item__medicine,
+.function_item__siren,
+.function_item__health,
+.function_item__smartwatch,
+.function_item__conversation,
+.function_item__facebook {
+
+    &:before {
+        min-width: 80px;
+        min-height: 80px;
+        box-sizing: border-box;
+        border: 1px solid #bfe4f6;
+        border-radius: 80px;
+        position: absolute;
+        top: 20px;
+        left: calc(50% - 40px);
+        padding-top: 22px;
+    }
+}
+
+.function_item__medicine:before {
+    content: url("../img/001-medicine.png");
+}
+
+.function_item__siren:before {
+    content: url("../img/002-siren.png");
+}
+
+.function_item__health:before {
+    content: url("../img/003-health.png");
+}
+
+.function_item__smartwatch:before {
+    content: url("../img/004-smartwatch.png");
+    padding-left: 5px;
+}
+
+.function_item__conversation:before {
+    content: url("../img/006-conversation.png");
+}
+
+.function_item__facebook:before {
+    content: url("../img/005-facebook.png");
+}
+
+
+
+
+

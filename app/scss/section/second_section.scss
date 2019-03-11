@@ -1,0 +1,107 @@
+.second_section {
+    max-width: rem(1920px);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-bottom: rem(200px);
+    background: url("../img/second-section-bg.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    top: rem(-78px);
+
+    @include laptop {
+        top: rem(-105px);
+    }
+
+    @include phones {
+        top: rem(-130px);
+    }
+}
+
+.diary {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(178px) rem(20px) 0;
+
+    @include laptop {
+        display: block;
+    }
+
+    @include phones {
+        padding: rem(150px) rem(10px) 0;
+    }
+}
+
+.diary_img {
+    max-width: rem(400px);
+    padding-left: rem(130px);
+    box-sizing: border-box;
+
+
+    @include laptop {
+        text-align: center;
+        margin: rem(20px) auto;
+        padding-left: 0;
+    }
+
+    img {
+        @include phones {
+           width: 75%;
+        }
+    }
+}
+
+.diary_content {
+    max-width: rem(660px);
+    margin-left: rem(100px);
+    box-sizing: border-box;
+
+    @include laptop {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.section_title__diary {
+    margin-top: rem(90px);
+
+    @include laptop {
+        text-align: center;
+    }
+}
+
+.diary_list {
+    padding-right: rem(160px);
+
+    @include laptop {
+        padding-right: 0;
+    }
+}
+
+.diary_item {
+    margin-bottom: rem(20px);
+    padding-left: rem(20px);
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: #16afe0;
+        border-radius: 5px;
+        position: absolute;
+        top: rem(10px);
+        left: 0;
+    }
+}
+
+.button__diary {
+    width: rem(200px);
+    background: $button-color;
+    margin-top: rem(40px);
+
+    @include laptop {
+        margin: rem(40px) auto 0;
+    }
+}
+

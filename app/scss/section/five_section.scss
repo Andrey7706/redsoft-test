@@ -1,0 +1,70 @@
+.five_section {
+    max-width: rem(1920px);
+    background: #f1f4fc;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.specialists {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(90px) rem(20px) rem(80px) 0;
+
+    @include full {
+        display: block;
+    }
+
+    @include phones {
+        padding: rem(90px) rem(10px) rem(80px) 0;
+    }
+}
+
+.specialists_img {
+    margin-left: rem(-372px);
+    margin-top: rem(-175px);
+    margin-right: rem(50px);
+
+    img {
+        width: 100%;
+        height: auto;
+
+        @include full {
+            width: 75%;
+        }
+
+        @include tablets {
+            width: 100%;
+        }
+    }
+
+    @include full {
+        margin-left: 0;
+    }
+}
+
+.specialists_content {
+    max-width: rem(600px);
+    padding-left: rem(20px);
+
+    @include phones {
+        padding-left: rem(10px);
+    }
+}
+
+.specialists_item {
+    margin-bottom: rem(20px);
+    padding-left: rem(20px);
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: #16afe0;
+        border-radius: 5px;
+        position: absolute;
+        top: rem(10px);
+        left: 0;
+    }
+}

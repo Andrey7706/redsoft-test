@@ -1,0 +1,108 @@
+.four_section {
+    margin: 0 auto;
+    padding-bottom: rem(200px);
+    box-sizing: border-box;
+}
+
+.monitoring {
+    padding: 0 rem(20px);
+
+    @include phones {
+        padding: 0 rem(10px);
+    }
+}
+
+.section_title__monitoring {
+    text-align: center;
+}
+
+.monitoring_content {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: rem(90px);
+
+    @include  laptop {
+        display: block;
+    }
+}
+
+.monitoring_desc {
+    max-width: rem(660px);
+
+    @include full {
+        padding-left: rem(60px);
+    }
+}
+
+.monitoring_list {
+    padding-left: rem(60px);
+}
+
+.monitoring_item {
+    margin-bottom: rem(90px);
+    position: relative;
+}
+
+.monitoring_title {
+    font-size: rem(24px);
+    line-height: 36px;
+}
+
+.monitoring_img {
+    max-width: rem(611px);
+    margin-right: rem(-115px);
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @include full {
+        margin-right: 0;
+    }
+
+    @include laptop {
+        margin: 0 auto;
+    }
+}
+
+.monitoring_number {
+    display: inline-block;
+    margin: .5em;
+    width: rem(123px);
+    height: rem(123px);
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(270deg, transparent 15%, #16afe0 0%);
+    top: rem(-35px);
+    left: rem(-120px);
+    z-index: -2;
+    opacity: 0.25;
+
+    &:after {
+        border-radius: 50%;
+        display: block;
+        background: $background;
+        position: absolute;
+        left: rem(1px);
+        top: rem(1px);
+        height: rem(121px);
+        width: rem(121px);
+        font-size: rem(60px);
+        color: #23b3e2;
+        text-align: center;
+        line-height: 121px;
+    }
+}
+
+.monitoring_number__one:after {
+    content: "1";
+}
+
+.monitoring_number__two:after {
+    content: "2";
+}
+
+.monitoring_number__three:after {
+    content: "3";
+}

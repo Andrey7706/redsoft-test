@@ -1,0 +1,154 @@
+.first_section {
+    max-width: rem(1920px);
+    background-image: url("../img/first-bg.png");
+    background-size: cover;
+    background-position: top center;
+    color: $white;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-bottom: rem(33px);
+    position: relative;
+    z-index: 3;
+}
+
+.first_section__next {
+    background-image: url("../img/first-bg-2.png");
+    padding-bottom: rem(48px);
+}
+
+.action {
+    padding: rem(18px) rem(20px) 0;
+
+    @include phones {
+        padding: rem(10px);
+    }
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+        display: block;
+    }
+}
+
+.logo {
+    padding-top: rem(17px);
+
+    @include laptop {
+        text-align: center;
+    }
+
+}
+
+.menu_header {
+    width: rem(500px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-top: rem(20px);
+    margin-left: rem(100px);
+
+    .menu_item {
+        margin: 0 4% 5%;
+        position: relative;
+    }
+
+    @include cera(bold);
+
+    @include laptop {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    .menu_item__active {
+
+        &:after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: $white;
+            border-radius: 5px;
+            position: absolute;
+            top: 25px;
+            left: calc(50% - 2px);
+        }
+    }
+}
+
+.button__header {
+    width: rem(200px);
+    border: 2px solid $button-header-color;
+
+    &:hover {
+        background: $button-header-color;
+    };
+
+    @include cera(bold);
+
+    @include laptop {
+        margin: rem(30px) auto;
+
+    }
+}
+
+.title {
+    max-width: rem(760px);
+    font-size: rem(36px);
+    line-height: 54px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: rem(101px);
+}
+
+.desc {
+    max-width: rem(760px);
+    font-size: rem(24px);
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: rem(49px);
+}
+
+.button__first {
+    width: rem(180px);
+    background: $button-color;
+    margin: rem(48px) auto 0;
+}
+
+.pag {
+    width: 72px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #5489c3;
+    border-radius: 20px;
+    margin: 132px auto 0;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 16px;
+        height: 1px;
+        background: $white;
+        position: absolute;
+        top: 9px;
+        left: 15px;
+    }
+
+    &:after {
+        content: "";
+        width: 16px;
+        height: 1px;
+        background: #5489c3;
+        position: absolute;
+        top: 9px;
+        right: 15px;
+    }
+}
+
+
+
+

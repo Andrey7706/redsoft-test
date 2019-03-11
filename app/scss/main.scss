@@ -1,0 +1,21 @@
+$background: #fafaff;
+$white: #ffffff;
+$font-color: #60759d;
+$button-color: #e70067;
+$button-header-color: #5489c3;
+
+
+// layout
+@import "_misc/normalize";
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+// styles
+@import "section/first_section";
+@import "section/three_section";
+@import "section/second_section";
+@import "section/four_section";
+@import "section/five_section";
+@import "section/six_section";
+@import "section/footer";
